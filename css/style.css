@@ -201,6 +201,20 @@ section.conquistas {
   max-width: 100%;
 }
 
+/* Efeito logos */
+.consquista-single img {
+  filter: grayscale(100%);
+  transition: 1s;
+  transform: scale(1, 1);
+}
+
+.consquista-single img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2, 1.2);
+}
+
+
+
 /* toggle icon-menu */
 
 .menu-item {
@@ -275,8 +289,65 @@ section.sobre-two {
   margin-bottom: 16px;
 }
 
+/* Depoimentos */
 
+section.depoimentos {
+  padding: 42px 0;
+}
 
+section.depoimentos .depoimentos-chamada {
+  text-align: center;
+}
+
+.depoimentos-chamada h2 {
+  color: #124265;
+  text-transform: uppercase;
+}
+
+.depoimentos-chamada p {
+  color: #919191;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+/* carrousel - Precisa de um review de correção*/
+
+.carrousel {
+  display: flex;
+}
+
+.carrousel-single {
+  width: 31%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.carrousel-single img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline;
+  margin: 10px 0;
+
+}
+
+.carrousel-single-box {
+  padding: 24px;
+  background-color: #f3f9fd;
+  border-radius: 8px;
+}
+
+.carrousel-single-box p {
+  font-style: italic;
+  font-size: 16px;
+  color: #919191;
+}
+
+.carrousel-single-box i {
+  color: #c9e3f5;
+  font-size: 24px;
+  padding: 0 8px;
+}
 
 /* Pontos responsivo */
 @media screen and (max-width: 768px) {
@@ -331,3 +402,5 @@ section.sobre-two {
     width: 100%;
   }
 }
+
+
